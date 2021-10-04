@@ -1,22 +1,31 @@
 public class AssignCharacter {
 	public static void main(String[] args) {
-		int i,j,n=5;
-		for(i=0;i<n;i++)
+		int i,j,k,n=5;
+		for(i=1;i<=n;i++)
 		{
-			for(j=n-i;j>1;j--)
+			for(j=n-i;j>0;j--)
 			{
-				System.out.println("");
+				System.out.println(" ");
 			}
-			System.out.println("*");
-		for(j=0;j<=i;j++)
+			for(k=1;k<=2*i-1;k++)
+			{
+				System.out.println("*");
+			}
+			System.out.println(" ");
+		}
+	
+		for(i=4;i>0;i--)
 		{
-			System.out.println("*");
+			for(j=4-i;j>=0;j--)
+			{
+				System.out.println(" ");
+			}
+			for(k=1;k<=2*i-1;k++)
+			{
+				System.out.println("*");
+			}
 		}
-		System.out.println("");
-		}
-
-		
 
 	}
-
 }
+
